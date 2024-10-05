@@ -1,0 +1,66 @@
+body {
+    font-family: 'Press Start 2P', cursive; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; 
+    user-select: none; /* Prevent text selection */
+}
+
+.browser-window {
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid #0f0; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); 
+}
+
+.url-bar {
+    display: flex;
+    padding: 10px;
+    background: #1a1a1a;
+}
+
+.url-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #0f0; 
+    border-radius: 4px;
+    color: #fff;
+    background: #2b2b2b;
+}
+
+.url-bar button {
+    padding: 10px;
+    color: #fff;
+    background: #0f0; /* Neon green button */
+    border: none;
+    cursor: pointer;
+}
+
+.iframe-container {
+    position: relative;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden;
+    background: #222; /* Dark background for the iframe */
+}
+
+#iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#uploaded-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Optional: add some transparency to the image */
+}
