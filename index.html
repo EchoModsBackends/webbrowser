@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Prevent text selection */
+        body {
+            user-select: none; /* For modern browsers */
+            -webkit-user-select: none; /* For Safari */
+            -moz-user-select: none; /* For Firefox */
+        }
+        .browser-window {
+            /* Add additional styles as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="browser-window">
+        <div class="url-bar">
+            <input type="text" id="url-input" placeholder="Enter URL or IP (e.g., 142.250.72.196)">
+            <button onclick="loadURL()">Go</button>
+        </div>
+        <div class="iframe-container">
+            <iframe id="iframe" src="about:blank" allowfullscreen></iframe>
+            <img id="uploaded-image" src="" alt="Background Image">
+        </div>
+    </div>
+    <input type="file" accept="image/*" onchange="displayImage(event)" style="margin: 20px;">
+    <script src="script.js"></script>
+</body>
+</html>
